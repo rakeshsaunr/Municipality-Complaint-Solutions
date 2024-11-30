@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Favicon -->
+    <link href="image/logo.png" rel="icon">
+    
+    <!-- Bootstrap and other libraries -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="main.css">
+    
+    <title>Welcome to Complaint Solution</title>
+
+    <style>
+        /* Animation for the logo */
+        .logo img {
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        /* Hover animation for navbar links */
+        .nav-link {
+            transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+
+        .nav-link:hover {
+            color: #FFD700; /* Change link color on hover */
+            transform: scale(1.1); /* Slightly enlarge the text */
+        }
+    </style>
+
+    <script>
+        function myfun() {
+            var guidebutton = document.getElementById("butn");
+            var guidelines = document.getElementById('guidelines');
+            if (guidebutton.value == "Click to see guidelines") {
+                guidelines.style.display = 'block';
+                guidebutton.value = 'Click to Hide guidelines';
+            } else if (guidebutton.value == "Click to Hide guidelines") {
+                guidelines.style.display = 'none';
+                guidebutton.value = 'Click to see guidelines';
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- Navbar with animated logo and links -->
+    <nav class="navbar navbar-expand-sm bg-dark">
+        <div class="nav-item item1 logo" style="margin-left:5%">
+            <h4 class="text-light" onclick='window.new("index.html");' style="cursor:pointer white">
+                <img width="50px" height="auto" src="image/logo.png" alt="Logo">
+                Municipality Complaint Solution
+            </h4>
+        </div>
+        <div class="navbar-nav">
+            <div class="nav-item items">
+                <a class="nav-link text-light" href="#">User Login</a>
+            </div>
+            <div class="nav-item items">
+                <a class="nav-link text-light" href="userreg1.php">User Registration</a>
+            </div>
+            <div class="nav-item items">
+                <a class="nav-link text-light" href="#">Admin</a>
+            </div>
+        </div>
+    </nav>
+</body>
+</html>

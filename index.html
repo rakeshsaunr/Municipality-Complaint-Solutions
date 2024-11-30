@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Favicon -->
+  <link href="image/logo.png" rel="icon">
+  
+  <!-- Bootstrap and other libraries -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="main.css">
+  <title>Municipality Complaint Solution</title>
+
+  <script>
+    $(document).ready(function(){
+      // Trigger the modal to open automatically
+      $('#guidelinesModal').modal('show');
+    });
+  </script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar-nav navbar-expand-sm bg-primary">
+    <div class="nav-item item1" style="margin-left:5%">
+        <h4 class="text-light" onclick='window.open("index.html");' style="cursor:pointer">
+            <img width="50px" height="auto" src="image/logo.png" alt="image"> Municipality Complaint Solution
+        </h4>
+    </div>
+    <div class="nav-item items">
+        <a class="nav-link" href="userlogin1.html">User Login</a>
+    </div>
+    <div class="nav-item items">
+        <a class="nav-link" href="userreg1.html">User Registration</a>
+    </div>
+    <div class="nav-item items">
+        <a class="nav-link" href="adminlogin1.html">Admin</a>
+    </div>
+</nav>
+
+  <!-- Carousel Section -->
+  <div id="demo" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+  
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="image/Complaint2.gif" alt="Complaints" width="1100" height="500">
+      </div>
+      <div class="carousel-item">
+        <img src="image/comp.jpg" alt="Complaint" width="1100" height="500">
+      </div>
+      <div class="carousel-item">
+        <img src="image/background.jpg" alt="Background" width="1100" height="500">
+      </div>
+    </div>
+  
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+
+  <!-- Guidelines Modal -->
+  <div class="modal fade" id="guidelinesModal" tabindex="-1" role="dialog" aria-labelledby="guidelinesModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="guidelinesModalLabel">Guidelines for Using the Complaint System</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <strong>Step 1:</strong> Register yourself by visiting the <a href="userreg1.html">User Registration</a> page.
+            </li>
+            <li class="list-group-item">
+              <strong>Step 2:</strong> After registration, log in using the <a href="userlogin1.html">User Login</a> page.
+            </li>
+            <li class="list-group-item">
+              <strong>Step 3:</strong> Set your personal information in your profile.
+            </li>
+            <li class="list-group-item">
+              <strong>Step 4:</strong> In the complaint section, choose the type and sub-type of your complaint.
+            </li>
+            <li class="list-group-item">
+              <strong>Step 5:</strong> Write your complaint and submit it. Wait for a response.
+            </li>
+            <li class="list-group-item">
+              <strong>Step 6:</strong> You can check the status of your complaint on your dashboard.
+            </li>
+            <li class="list-group-item">
+              <strong>Step 7:</strong> To log out, click the Logout button located in the top-right corner of the page.
+            </li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<br/>
+  <!-- Footer Section -->
+<footer class="bg-primary text-white text-center text-lg-start mt-5">
+  <div class="container p-3">
+    <p>
+      Your go-to platform for lodging complaints and ensuring quick solutions from your local municipality.
+      We are committed to making our community better and more efficient.
+    </p>
+    <!-- Copyright Section -->
+    <div class="text-center">
+      <i class="bi bi-c-circle"></i> &nbsp; 2023 Copyright:
+      <a href="#!" class="text-white">Municipality Complaint Solution</a> &nbsp;&nbsp;
+      <a href="#!" class="text-white"><i class="bi bi-facebook"></i></a> &nbsp;&nbsp;
+      <a href="#!" class="text-white"><i class="bi bi-twitter"></i></a> &nbsp;&nbsp;
+      <a href="#!" class="text-white"><i class="bi bi-instagram"></i></a>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>
